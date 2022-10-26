@@ -1,23 +1,23 @@
-1830
-====
+18Chesapeake Off The Rails
+==========================
 
 Private Companies
 -----------------
 
-All private companies
+The private companies P1 to P4
 block the placement of track tiles
 in a hex or a number of hexes
 as long as they are owned by a player.
 
-When the first 5 train is bought,
-all private companies close.
-
-P2:
-The owning company may place a tile in the associated hex
+P2 and P3:
+The owning company may place tiles in the associated hexes
 as an additional action.
+This action may only be used if both hexes are empty.
+Only tiles #8 en #9 may be used,
+and the tiles must connect to each other.
 
-P3:
-The owning company may place a tile in its associated hex.
+P4:
+The owning company may place a straight city tile in its associated hex.
 This counts as the company's tile lay action for the turn.
 Terrain cost must be paid.
 After the tile has been laid,
@@ -25,17 +25,13 @@ the company may place a token on the tile
 for free.
 This counts as the company's token placement for the turn.
 
-P4:
-During the owner's turn in a SDR
-or between turns during a SDR or OR,
-this private company may be exchanged for one share of M&H.
-
 P5:
-The purchaser of this private company receives one share of the PRR.
+The purchaser of this private company receives one share of the B&O.
 
 P6:
 The purchaser of this private company receives
-the president's share of the B&O.
+the president's share of the associated railroad company
+(chosen at random before the game).
 This private company closes when the railroad company buys its first train.
 This private company may not be bought by a railroad company.
 
@@ -79,7 +75,8 @@ When the share value of the company is in the orange or brown zone on the market
 a player may own up to 100% of the shares.
 
 When the share value of the company is in the brown zone on the market,
-a player may buy mutiple shares in one turn.
+a player may buy mutiple shares in one turn,
+both from the IPO and the open market.
 
 A player may not buy a share of a company
 of which they have sold a share earlier this SDR.
@@ -105,7 +102,7 @@ do not count towards the certificate limit.
 ### Starting a company
 
 A railroad company floats immediately
-when 60% of the shares has been sold from the IPO.
+when 50% of the shares has been sold from the IPO.
 The company receives 10 times the share value.
 The home token is placed
 at the start of the company's turn in the next operating round.
@@ -150,7 +147,7 @@ After the first 3 train has been bought,
 at any time during a company's turn in an OR,
 the company may buy a private company
 from a player
-for a value of at least half face value,
+for a value of at least 1,
 up to 2 times face value.
 
 #### Lay Track
@@ -173,17 +170,31 @@ When placing a tile on a hex
 that contains a terrain cost,
 the company must pay that cost to the bank.
 
+Yellow basic track tiles are unlimited.
+
 ##### Upgrading Tiles
 
 A yellow tile may be upgraded to a green tile
 after the first 3 train has been bought.
 A green tile may be upgraded to a brown tile
 after the first 5 train has been bought.
+A brown tile may be upgraded to a grey tile
+after the first D train has been bought.
 
-When upgrading a tile,
+When upgrading a tile that does not contain a city or town,
+there must be a route
+from one of the company's tokens
+to any new track on the new tile.
+
+When upgrading a tile that contains a city or town,
 there must be a route
 from one of the company's tokens
 to any track on the new tile.
+
+Placing a green tile on a yellow pre-printed hex
+counts as upgrading a tile.
+If the hex contains a terrain cost,
+the company must pay that cost to the bank.
 
 #### Place Token
 
@@ -281,6 +292,12 @@ when the bank runs out of money during a stock dealing round.
 
 The game ends immediately
 when a player goes bankrupt.
+
+The game ends at the end of the current operating round
+when a share price reaches the top of the market during an operating round.
+
+The game ends immediately
+when a share price reaches the top of the market during a stock dealing round.
 
 The value of a players holdings is the sum of
 * their cash
