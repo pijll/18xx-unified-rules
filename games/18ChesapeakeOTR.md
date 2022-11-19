@@ -1,13 +1,14 @@
-18Chesapeake Off The Rails
-==========================
+# 18Chesapeake Off The Rails
 
-Private Companies
------------------
+## Private Companies
 
 The private companies P1 to P4
 block the placement of track tiles
 in a hex or a number of hexes
 as long as they are owned by a player.
+
+When the first 5 train is bought,
+all private companies close.
 
 P2 and P3:
 The owning company may place tiles in the associated hexes
@@ -17,7 +18,7 @@ Only tiles #8 en #9 may be used,
 and the tiles must connect to each other.
 
 P4:
-The owning company may place a straight city tile in its associated hex.
+The owning company may place a tile in its associated hex.
 This counts as the company's tile lay action for the turn.
 Terrain cost must be paid.
 After the tile has been laid,
@@ -51,8 +52,7 @@ When all players pass while any other private company is still available,
 there is an Operating Round,
 after which the private company auction continues.
 
-Stock Dealing Rounds
---------------------
+## Stock Dealing Rounds
 
 During a SDR turn,
 a player may
@@ -94,18 +94,47 @@ the share value of the company moves 1 space down for each 10% sold.
 
 ### Certificate limit
 
-Private company certificates count towards the certificate limit.
+A player may not buy a share that would take them
+over the certificate limit.
 
-Shares in companies with a share value in the yellow, orange and brown zones on the market
+If a player owns more certificates than the certificate limit,
+they must sell shares until they comply with the certificate limit
+in their next SDR turn.
+
+Shares in companies with a share value in the yellow zone on the market
 do not count towards the certificate limit.
 
+Private company certificates
+count towards the certificate limit.
+
 ### Starting a company
+
+When a player buys the president's certificate of a company,
+they choose the par value of the company
+from the options indicated on the stock market chart.
+
+After the president's certificate has been bought,
+the other shares are available.
 
 A railroad company floats immediately
 when 50% of the shares has been sold from the IPO.
 The company receives 10 times the share value.
 The home token is placed
 at the start of the company's turn in the next operating round.
+
+### Presidentship
+
+If at any time a player has more shares of a company
+than that company's president,
+they become the president of that company.
+
+They exchange two share certificates for the president's certificate,
+and receive the company charter.
+
+If two players have more shares than the president,
+and have an equal number of shares,
+the first player in player order after the former president
+becomes the new president.
 
 ### End of SDR
 
@@ -119,8 +148,11 @@ if the shares of the company are sold out both in IPO and in the open market.
 The player left of the last player to sell or buy a certificate
 receives the priority deal.
 
-Operating Rounds
-----------------
+## Operating Rounds
+
+The number of operating rounds
+is determined at the start of each set of ORs
+and depends on the train phase.
 
 ### Order of Play
 
@@ -213,6 +245,12 @@ on the same hex.
 Each train may run a route of at least two revenue locations.
 The maximum length of the route is the size of the train. 
 
+A route must include at least one token of the company.
+
+A route can visit but cannot pass through
+a city that is completely blocked
+by tokens of other companies.
+
 A route of a train can terminate
 at either a city, a town, or an off-board area.
 
@@ -281,8 +319,7 @@ in the currently operating railroad company.
 If the president cannot raise enough cash to pay for the train,
 they are bankrupt.
 
-End of Game
------------
+## End of Game
 
 The game ends at the end of the current set of operating rounds
 when the bank runs out of money during an operating round.
