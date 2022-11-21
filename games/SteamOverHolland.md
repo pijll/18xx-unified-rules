@@ -1,57 +1,50 @@
-# 1830
+# Steam over Holland
 
 ## Private Companies
-
-All private companies
-block the placement of track tiles
-in a hex or a number of hexes
-as long as they are owned by a player.
 
 When the first 5 train is bought,
 all private companies close.
 
+P1:
+Close this private company to place or upgrade one additional tile.
+
 P2:
-The owning company may place a tile in the associated hex
-as an additional action.
+Close this private company to make a connection across a river for free.
 
 P3:
-The owning company may place a tile in its associated hex.
-This counts as the company's tile lay action for the turn.
-Terrain cost must be paid.
-After the tile has been laid,
-the company may place a token on the tile
-for free.
-This counts as the company's token placement for the turn.
+20 bonus for any train using the ferry.
 
 P4:
-During the owner's turn in a SDR
-or between turns during a SDR or OR,
-this private company may be exchanged for one share of M&H.
+20 bonus for any train that includes Vlissingen in its route
 
 P5:
-The purchaser of this private company receives one share of the PRR.
+Close this private company to place a station token for free.
 
 P6:
-The purchaser of this private company receives
-the president's share of the B&O.
-This private company closes when the railroad company buys its first train.
-This private company may not be bought by a railroad company.
+The owning company pays 10% less for all trains it buys from the bank.
+
+P7:
+The purchaser of this private company receives one share of the NRS.
 
 ### Distribution
 
-In player order,
-a player may
-* buy the available private company with the lowest face value
-* place an advance bid on another private company
-* pass
+Randomly select as many private companies
+as there are players.
+The other private companies are removed from the game.
 
-When all players pass while the lowest value private company is still available,
-the value of that company is lowered by 5,
-and the private company auction continues.
+The private companies are auctioned in ascending order of face value.
+The priority deal holder is the first to bid or pass.
+Minimum bid is face value, minimum raise is 5.
 
-When all players pass while any other private company is still available,
-there is an Operating Round,
-after which the private company auction continues.
+If no player bids on a private company,
+it is removed from the game.
+
+After each auction, the priority deal is passed to the next player
+in player order.
+
+The player with the most cash remaining after all auctions
+receives the priority deal.
+
 
 ## Stock Dealing Rounds
 
@@ -60,13 +53,12 @@ a player can take the following actions, in order (all optional):
 * sell certificates
 * either start a company,
 or buy one share
-* sell certificates
 
 ### Buying
 
-When buying a share from the IPO,
-the player pays the par value
-to the bank.
+When buying a share from a company,
+the player pays the current market value
+to the company.
 
 When buying a share from the open market,
 the player pays the current market value
@@ -74,25 +66,21 @@ to the bank.
 
 A player may own up to 60% of the shares of a company.
 
-When the share value of the company is in the orange or brown zone on the market,
-a player may own up to 100% of the shares.
-
-When the share value of the company is in the brown zone on the market,
-a player may buy mutiple shares in one turn.
-
 A player may not buy a share of a company
 of which they have sold a share earlier this SDR.
 
 ### Selling
 
 Players may not sell shares
-during the first SDR.
+before the company has operated.
 
 The president's share may not be sold to the open market.
 The open market may hold up to 50% of the shares of a company.
 
 When a player sells shares,
 the share value of the company moves 1 space down for each 10% sold.
+If the seller is not the president of the company,
+the share value will not drop through a ledge.
 
 ### Certificate limit
 
@@ -103,28 +91,26 @@ If a player owns more certificates than the certificate limit,
 they must sell shares until they comply with the certificate limit
 in their next SDR turn.
 
-Shares in companies with a share value in the yellow zone on the market
-do not count towards the certificate limit.
-
 Private company certificates
 count towards the certificate limit.
 
 ### Starting a company
 
 To start a company,
-a player buys the president's certificate of a company.
-The player chooses the par value of the company
+a player buys a number of shares equal to the current phase
+in a single SDR turn.
+The player chooses the starting share value of the company
 from the options indicated on the stock market chart.
 
 After the president's certificate has been bought,
 the other shares are available.
 
 A railroad company floats immediately
-when 60% of the shares has been sold from the IPO.
-The company receives 10 times the par value.
-
+when the initial shares have been sold.
+The company receives the price of the sold shares.
+The other shares are placed in its treasury.
 The home token is placed
-at the start of the company's first OR turn.
+at the start of the company's turn in the next operating round.
 
 ### Presidentship
 
@@ -146,10 +132,7 @@ The SDR ends when
 all players pass
 in consecutive turns.
 
-The share value of a company moves up 1 space
-if the shares of the company are sold out both in IPO and in the open market.
-
-The player left of the last player to sell or buy a certificate
+The player left of the priority deal holder
 receives the priority deal.
 
 ## Operating Rounds
@@ -166,34 +149,45 @@ to their owners.
 
 Then, the railroad companies operate in order:
 * from high to low share value
-* right to left on the stock market
 * top to bottom in a stack on one stock market cell
 
 ### Railroad Company Operations
 
 During its turn,
 a company can take the following actions, in order:
+* Trade shares
+* Buy a private company
 * Lay track
 * Place a token
 * Run trains
 * Pay dividends
 * Buy trains
 
+#### Trade Shares
+
+A railroad company may issue shares from its treasury.
+They may sell as many shares to the open market
+as there are shares owned by players.
+
+The share price drops one space for each share that is sold
+except the first.
+
+A railroad company may buy its own shares from the open market.
+
+#### Buy Private Company
+
 After the first 3 train has been bought,
-at any time during a company's turn in an OR,
 the company may buy a private company
 from a player
-for a value of at least half face value,
-up to 2 times face value.
+for a value of 1 to face value.
 
 #### Lay Track
 
 Each turn, a company may
-either place one yellow tile
-or upgrade one tile.
+either place up to two yellow tiles
+or upgrade one tile and place up to one yellow tile (in any order).
 
-Track may not run off the hex grid
-or into a blank side of a pre-printed hex that cannot be upgraded.
+Track may not run off the hex grid.
 
 ##### Placing Tiles
 
@@ -202,9 +196,8 @@ there must be a route
 from one of the company's tokens
 to any track on that tile.
 
-When placing a tile on a hex
-that contains a terrain cost,
-the company must pay that cost to the bank.
+When a connection is made across a hexside with a river,
+the company must pay 50.
 
 ##### Upgrading Tiles
 
@@ -220,10 +213,17 @@ there must be a route
 from one of the company's tokens
 to any track on the new tile.
 
+When a connection is made across a hexside with a river,
+the company must pay 50.
+
 #### Place Token
 
 Each turn, a company may place one token
 in a free station circle.
+
+In the company's first OR turn,
+after placing the home token,
+no additional token may be placed.
 
 There must be a route
 from one of the company's tokens
@@ -243,13 +243,15 @@ a city that is completely blocked
 by tokens of other companies.
 
 A route of a train can terminate
-at either a city, a town, or an off-board area.
+at either a city or an off-board area.
 
 A route may contain two revenue locations
 on the same hex.
 
-Cities, towns and off-board areas
+The maximum length of the route is the size of the train. 
+Cities and off-board areas
 count toward the length of a route.
+Towns do not count toward the length of a route.
 
 No two trains of a company may run on the same piece of track.
 
@@ -257,7 +259,8 @@ No two trains of a company may run on the same piece of track.
 
 _N_ train: has a maximum route length of _N_.
 
-D train: has no maximum route length.
+3E train: does not receive revenue for towns;
+the revenue for cities and off-board locations is doubled.
 
 #### Pay Dividends
 
@@ -266,18 +269,18 @@ The total revenue of all trains may be
 * withheld in the company treasury
 
 When dividends are paid out,
-shares in the open market
+shares in the company's treasury
 pay out to the company.
 
 The share value moves
 * 1 space left if no dividends are paid out
-* 1 space right if dividends are paid out
+* 1 space right if the dividends are more than 100% of the share value
+* 2 spaces right if the dividends are more than 200% of the share value
 
 #### Purchase Trains
 
 A company may buy
 * the next available train from the bank
-* a train from the open market
 * any train from another company
 
 A company may buy multiple trains per turn.
@@ -285,13 +288,8 @@ A company may buy multiple trains per turn.
 A company may not buy a train
 if it is at the train limit.
 
-The D train may be bought at a discount
-by trading in another train.
-A company can do this even if it's at the train limit.
-The traded-in train is placed in the open market.
-
 Trains that are discarded because of a lowered train limit
-are placed in the open market. 
+are removed from the game.
 
 ##### Forced Train Purchases
 
@@ -300,17 +298,18 @@ and it has a valid route,
 it must buy a train.
 
 If the company does not have enough money to buy a train,
-they must buy the cheapest available train from the bank or open market,
-or a train from another company for no more than face value.
+they must buy the cheapest available train from the bank.
 
-In this case, the president must help pay for the train.
-They must sell shares if necessary.
+To pay for the train, the company first issues shares up to the usual limit,.
 
-Selling shares may not lead to a change in presidency
-in the currently operating railroad company.
+If this is not enough to buy the cheapest train,
+the president must help pay for the train with their personal cash.
 
-If the president cannot raise enough cash to pay for the train,
-they are bankrupt.
+If this is not enough, the president may optionally
+sell their own shares until there is enough money to buy the train.
+
+If the president cannot or does not want to raise enough cash to pay for the train,
+the company is removed from the game without compensation.
 
 ## End of Game
 
@@ -320,8 +319,8 @@ when the bank runs out of money during an operating round.
 The game ends at the end of the next set of operating rounds
 when the bank runs out of money during a stock dealing round.
 
-The game ends immediately
-when a player goes bankrupt.
+The game ends at the end of the current operating round
+when a share price reaches the top of the chart.
 
 The value of a players holdings is the sum of
 * their cash

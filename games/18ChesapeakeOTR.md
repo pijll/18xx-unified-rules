@@ -54,10 +54,12 @@ after which the private company auction continues.
 
 ## Stock Dealing Rounds
 
-During a SDR turn,
-a player may
-sell certificates, then buy a certificate, and then sell certificates;
-or pass.
+During their turn,
+a player can take the following actions, in order (all optional):
+* sell certificates
+* either start a company,
+or buy one share
+* sell certificates
 
 ### Buying
 
@@ -109,8 +111,9 @@ count towards the certificate limit.
 
 ### Starting a company
 
-When a player buys the president's certificate of a company,
-they choose the par value of the company
+To start a company,
+a player buys the president's certificate of a company.
+The player chooses the par value of the company
 from the options indicated on the stock market chart.
 
 After the president's certificate has been bought,
@@ -118,7 +121,7 @@ the other shares are available.
 
 A railroad company floats immediately
 when 50% of the shares has been sold from the IPO.
-The company receives 10 times the share value.
+The company receives 10 times the par value.
 The home token is placed
 at the start of the company's turn in the next operating round.
 
@@ -213,6 +216,8 @@ after the first 5 train has been bought.
 A brown tile may be upgraded to a grey tile
 after the first D train has been bought.
 
+When a tile is upgraded, all existing connections must be maintained.
+
 When upgrading a tile that does not contain a city or town,
 there must be a route
 from one of the company's tokens
@@ -231,7 +236,7 @@ the company must pay that cost to the bank.
 #### Place Token
 
 Each turn, a company may place one token
-in a free city circle.
+in a free station circle.
 
 There must be a route
 from one of the company's tokens
@@ -243,7 +248,6 @@ on the same hex.
 #### Run Trains
 
 Each train may run a route of at least two revenue locations.
-The maximum length of the route is the size of the train. 
 
 A route must include at least one token of the company.
 
@@ -262,9 +266,11 @@ count toward the length of a route.
 
 No two trains of a company may run on the same piece of track.
 
-##### Special trains
+##### Train types
 
-D trains: have no maximum route length.
+_N_ train: has a maximum route length of _N_.
+
+D train: has no maximum route length.
 
 #### Pay Dividends
 
